@@ -292,7 +292,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 // ============================================================
 // 設定
 // ============================================================
-const GAS_URL =  + GAS_URL + ;
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbw4yLcVBMzjAWoghF9I23J55y5fNTLtBlE0h35rbyF7nD9fLDsmrS2R5S5Gt9uzJ1KT-Q/exec';
 const TICKER_NAMES = {
   '6471': 'NSK(日本精工)',
   '6976': '太陽誘電',
@@ -320,7 +320,7 @@ let pOpen = true;
 // ============================================================
 async function loadData() {
   // GAS URLが設定されていない場合はモックデータを使用
-  if (GAS_URL === 'https://script.google.com/macros/s/AKfycbw4yLcVBMzjAWoghF9I23J55y5fNTLtBlE0h35rbyF7nD9fLDsmrS2R5S5Gt9uzJ1KT-Q/exec') {
+  if (GAS_URL === 'YOUR_GAS_WEBAPP_URL') {
     appData = getMockData();
     renderAll();
     document.getElementById('loading-txt').textContent = '(デモ表示)';
